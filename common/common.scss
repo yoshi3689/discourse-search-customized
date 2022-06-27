@@ -23,7 +23,7 @@ $max-width: 600px;
   }
 }
 
-.search-container #ember22 {
+.search-container .ember-view:has(> .search-widget) {
   width: 100%;
 }
 
