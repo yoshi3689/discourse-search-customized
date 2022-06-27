@@ -19,6 +19,11 @@ background_image:
   default: ""
   description: background image for the banner
 
+clickable_image:
+  type: upload
+  default: ""
+  description: image with a link
+
 tile_background_image: false
 
 show_for:

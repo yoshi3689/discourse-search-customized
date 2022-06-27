@@ -1,9 +1,18 @@
 {{#if shouldDisplay}}
   <div class="custom-search-banner">
     <div class="wrap custom-search-banner-wrap">
-      <h1>{{theme-i18n "search_banner.headline"}}</h1>
-      <p>{{theme-i18n "search_banner.subhead"}}</p>
-      {{mount-widget widget="search-widget"}}
+      <div class="text_wrapper">
+        <h1>{{theme-i18n "search_banner.headline"}}</h1>
+        <p>{{theme-i18n "search_banner.subhead"}}</p>
+      </div>
+      <div class="search-container">
+        {{mount-widget widget="search-widget"}}
+        <p>OR</p>
+        <a href="#" class="question-btn">Ask a Question</a>
+      </div>
+      <a class="clickable_image_wrapper" href="{{theme-i18n "search_banner.actionable_image_link"}}">
+        <div class="clickable_image"> </div>
+      </a>
     </div>
   </div>
 {{/if}}
