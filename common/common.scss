@@ -48,7 +48,7 @@ $max-width: 850px;
 .text-wrapper {
   text-align: center;
   color: var(--primary);
-  > h2 {
+  > h1 {
     font-size: var(--font-up-6);
     line-height: $line-height-small;
     @include breakpoint(tablet) {
