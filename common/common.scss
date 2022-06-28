@@ -253,5 +253,6 @@ $max-width: 850px;
     grid-row: 2;
     flex-direction: row;
     gap: 1rem;
+    align-self: flex-end;
   }
 }
