@@ -176,12 +176,12 @@ $max-width: 600px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.35);
 }
 
-.actionable_image_wrapper {
+.clickable_image_wrapper {
   height: 100%;
   width: 100%;
 }
 
-.actionable_image_wrapper div {
+.clickable_image_wrapper div {
   width: 100%;
   height: 100%;
   @if $background-image != "none" {
@@ -214,7 +214,7 @@ $max-width: 600px;
     grid-template-columns: 3fr 2fr;
     justify-items: space-between;
   } 
-  .actionable_image_wrapper {
+  .clickable_image_wrapper {
     grid-row: 1;
     grid-column: 2;
     max-width: 400px;
