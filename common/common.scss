@@ -91,7 +91,7 @@ $max-width: 850px;
     padding: 0 !important;
     z-index: 0;
     border: 1px solid var(--tertiary);
-    outline: 1px solid var(--tertiary);
+    border-radius: 0.25em;
   }
 
   .search-input {
