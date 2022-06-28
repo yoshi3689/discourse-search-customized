@@ -2,6 +2,13 @@
 
 $max-width: 850px;
 
+// the width of the search bar is too big on mobile
+// so that the button/search bar looks weird
+
+#main-outlet {
+  margin: 0 auto;
+}
+
 .custom-search-banner-wrap {
   max-width: 1150px !important;
   margin: 0 auto;
@@ -169,6 +176,7 @@ $max-width: 850px;
     transition: all 0.3s ease;
     border-radius: 0.25rem;
     white-space: nowrap;
+    text-align: center;
   }
 
   .question-btn:hover {
