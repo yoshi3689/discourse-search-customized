@@ -102,6 +102,9 @@ $max-width: 600px;
     max-width: $max-width;
   }
 
+  .custom-search-banner-wrap .text_wrapper {
+    color: var(--primary);
+  }
   .search-context {
     position: absolute;
     z-index: 10;
