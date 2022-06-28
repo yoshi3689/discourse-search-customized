@@ -3,8 +3,7 @@
 $max-width: 850px;
 
 .custom-search-banner-wrap {
-  width: 80%;
-  max-width: 1200px;
+  max-width: 1200px !important;
   margin: 0 auto;
 }
 .display-search-banner {
@@ -200,6 +199,9 @@ $max-width: 850px;
 
 
 @media only screen and (min-width: 800px) {
+  .custom-search-banner-wrap {
+    width: 80%;
+  }
   .custom-search-banner-wrap .text-wrapper {
     text-align: left;
     grid-column: 1;
