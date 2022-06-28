@@ -49,10 +49,10 @@ $max-width: 1150px;
   text-align: center;
   color: var(--primary);
   > h2 {
-    font-size: var(--font-up-5);
+    font-size: var(--font-up-6);
     line-height: $line-height-small;
     @include breakpoint(tablet) {
-      font-size: var(--font-up-3);
+      font-size: var(--font-up-4);
     }
   }
 }
@@ -63,7 +63,7 @@ $max-width: 1150px;
   align-items: center;
   margin: 2rem 0;
   gap: 0.5rem;
-  
+
   > div, .search-widget {
     width: 100%;
   }
