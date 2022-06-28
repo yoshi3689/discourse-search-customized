@@ -1,6 +1,6 @@
 @import "common/foundation/mixins";
 
-$max-width: 1150px;
+$max-width: 850px;
 
 .custom-search-banner-wrap {
   width: 80%;
@@ -38,10 +38,10 @@ $max-width: 1150px;
     margin-top: 0.5em;
   }
 
-  > div {
-    margin: 0 auto;
-    max-width: $max-width;
-  }
+  // > div {
+  //   margin: 0 auto;
+  //   max-width: $max-width;
+  // }
 }
 
 
