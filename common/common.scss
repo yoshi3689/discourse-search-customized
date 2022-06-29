@@ -31,6 +31,7 @@ $max-width: 850px;
 }
 
 .search-banner {
+  background-color: var(--tertiary);
   @if $background_image != "none" {
     background-image: url($background_image);
   } @else {
