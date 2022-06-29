@@ -54,21 +54,16 @@ $max-width: 850px;
   }
 }
 
-.custom-search-banner-wrap {
-  box-sizing: border-box;
-  position: relative;
-  padding: 2.5em 0 3em;
-  margin: 1em auto;
-  @include breakpoint(tablet) {
-    padding: 1em 8px 2em;
-    margin-top: 0.5em;
-  }
-
-  // > div {
-  //   margin: 0 auto;
-  //   max-width: $max-width;
-  // }
-}
+// .custom-search-banner-wrap {
+//   box-sizing: border-box;
+//   position: relative;
+//   padding: 2.5em 0 3em;
+//   margin: 1em auto;
+//   @include breakpoint(tablet) {
+//     padding: 1em 8px 2em;
+//     margin-top: 0.5em;
+//   }
+// }
 
 
 .text-wrapper {
@@ -242,9 +237,9 @@ $max-width: 850px;
 
 
 @media only screen and (min-width: 800px) {
-  .custom-search-banner-wrap {
-    width: 80%;
-  }
+  // .custom-search-banner-wrap {
+  //   width: 80%;
+  // }
   .custom-search-banner-wrap .text-wrapper {
     text-align: left;
     grid-column: 1;
