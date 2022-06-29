@@ -9,8 +9,30 @@ $max-width: 850px;
   margin: 0 auto;
 }
 
+.custom-search-banner {
+  // margin-top: 30px;
+  // margin-bottom: 50px;
+  // border-radius: 1em;
+  // max-width: 1150px;
+  .archetype-regular & {
+    min-height: 500px;
+  }
+  @media screen and (max-width: 700px) {
+    padding: 1.5em;
+    margin-top: 0;
+  }
+  padding-bottom: 5% !important; //overriding inline style
+  @include box-shadow;
+  @media screen and (max-width: 1120px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 1075px) {
+    width: 85%;
+  }
+}
 .custom-search-banner-wrap {
   margin: 0 auto;
+  // might take out the margins inside of .wrap class
 }
 .display-search-banner {
   #main-outlet {
