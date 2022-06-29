@@ -29,10 +29,7 @@ $max-width: 850px;
     width: 85%;
   }
 }
-// .custom-search-banner-wrap {
-//   margin: 0 auto;
-//   // might take out the margins inside of .wrap class
-// }
+
 .display-search-banner {
   #main-outlet {
     padding-top: 0;
@@ -54,16 +51,16 @@ $max-width: 850px;
   }
 }
 
-// .custom-search-banner-wrap {
-//   box-sizing: border-box;
-//   position: relative;
-//   padding: 2.5em 0 3em;
-//   margin: 1em auto;
-//   @include breakpoint(tablet) {
-//     padding: 1em 8px 2em;
-//     margin-top: 0.5em;
-//   }
-// }
+.custom-search-banner-wrap {
+  box-sizing: border-box;
+  position: relative;
+  padding: 2.5em 0 3em;
+  margin: 1em 0;
+  @include breakpoint(tablet) {
+    padding: 1em 8px 2em;
+    margin-top: 0.5em;
+  }
+}
 
 
 .text-wrapper {
