@@ -10,13 +10,6 @@ $max-width: 850px;
 }
 
 .custom-search-banner {
-  // margin-top: 30px;
-  // margin-bottom: 50px;
-  // border-radius: 1em;
-  // max-width: 1150px;
-  .archetype-regular & {
-    min-height: 500px;
-  }
   @media screen and (max-width: 700px) {
     padding: 1.5em;
     margin-top: 0;
@@ -41,7 +34,7 @@ $max-width: 850px;
   @if $background_image != "none" {
     background-image: url($background_image);
   } @else {
-    background: none;
+    background-color: var(--tertiary);
   }
   @if $tile_background_image == "true" {
     background-size: auto;
@@ -234,9 +227,6 @@ $max-width: 850px;
 
 
 @media only screen and (min-width: 800px) {
-  // .custom-search-banner-wrap {
-  //   width: 80%;
-  // }
   .custom-search-banner-wrap .text-wrapper {
     text-align: left;
     grid-column: 1;
