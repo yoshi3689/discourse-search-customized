@@ -14,7 +14,7 @@ $max-width: 850px;
     padding: 1.5em;
     margin-top: 0;
   }
-  padding: 5% 0 !important; //overriding inline style
+  padding-top: 5% !important; //overriding inline style
   @media screen and (max-width: 1120px) {
     width: 80%;
   }
