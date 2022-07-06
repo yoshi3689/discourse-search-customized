@@ -147,7 +147,6 @@ $max-width: 850px;
   }
 
   .results {
-    top: 3.5rem !important;
     box-sizing: border-box;
     background: var(--secondary);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -190,8 +189,8 @@ $max-width: 850px;
   .question-btn {
     display: block;
     width: 100%;
-    padding: 13px 0;
-    font-size: 17px;
+    padding: 9px 0;
+    font-size: 1rem;
     background-color: var(--tertiary);
     color: var(--secondary);
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.26);
