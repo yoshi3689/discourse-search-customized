@@ -147,12 +147,13 @@ $max-width: 850px;
   }
 
   .results {
+    top: 50px;
     box-sizing: border-box;
     background: var(--secondary);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     position: absolute;
     width: $max-width;
-    z-index: 9;
+    z-index: 1000;
     margin-left: auto;
     margin-right: auto;
     left: 0;
