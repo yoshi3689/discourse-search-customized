@@ -212,9 +212,12 @@ $max-width: 850px;
   display: block;
   width: 50%;
   margin: 0 auto;
+  overflow: hidden;
   div {
     width: 100%;
     height: 12rem;
+    transform: scale(1);
+    transition: 0.3 ease;
     @if $background_image != "none" {
     background-image: url($clickable_image);
   } @else {
@@ -227,6 +230,10 @@ $max-width: 850px;
     background-repeat: no-repeat;
   }
   }
+}
+
+.clickable-image-wrapper > div:hover {
+  transform: scale(1.05);
 }
 
 
