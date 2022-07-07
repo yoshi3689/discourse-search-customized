@@ -20,6 +20,7 @@ $max-width: 850px;
     margin-top: 0;
   }
   padding-top: 5% !important; //overriding inline style
+  padding-bottom: 3%;
   @media screen and (max-width: 1120px) {
     width: 80%;
   }
@@ -66,7 +67,7 @@ $max-width: 850px;
   text-align: center;
   color: var(--primary);
   > h1 {
-    font-size: var(--font-up-6);
+    font-size: 3.5em !important;
     line-height: $line-height-small;
     @include breakpoint(tablet) {
       font-size: var(--font-up-4);
