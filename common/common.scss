@@ -43,6 +43,9 @@ $max-width: 850px;
       linear-gradient(152deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 70%),
       url($background_image)
     ;
+    .search-container>p, .text-wrapper {
+      color: #eee !important;
+    }
   } @else {
     // background-color: var(--tertiary);
   }
