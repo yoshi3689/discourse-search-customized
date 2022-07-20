@@ -21,11 +21,15 @@ $max-width: 850px;
   }
   padding-top: 5%; //overriding inline style
   padding-bottom: 3%;
+
   @media screen and (max-width: 1120px) {
     width: 80%;
   }
   @media screen and (max-width: 1075px) {
     width: 85%;
+  }
+  @media screen and (min-width: 1121px) {
+    width: 80%;
   }
 }
 
