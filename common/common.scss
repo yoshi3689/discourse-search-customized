@@ -237,6 +237,9 @@ $max-width: 850px;
     height: 12rem;
     transform: scale(1);
     transition: 0.3s ease;
+    max-width: 300px;
+    min-height: 180px;
+    margin: auto;
 
     @if $background_image != "none" {
     background-image: url($clickable_image);
