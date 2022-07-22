@@ -7,11 +7,21 @@ export default apiInitializer("0.8", (api) => {
     enableConnectorName === "above-main-container"
       ? "below-site-header"
       : "above-main-container";
-
   api.registerConnectorClass(disableConnectorName, "search-banner", {
     shouldRender() {
       return false;
     },
+  });
+
+  api.onPageChange(() => {
+    const realQuestionBtn = document.querySelector('#create-topic');
+    if (realQuestionBtn) {
+      const container = document.querySelector('.body-nav-title');
+      const visibleQuestionBtn = container.querySelector('.question-btn');
+      visibleQuestionBtn.addEventListener('click', () => {
+        realQuestionBtn.click();
+      });
+    }
   });
 
   // Simplified version of header search theme component
