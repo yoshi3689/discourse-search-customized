@@ -87,7 +87,7 @@ $max-width: 850px;
 .question-btn {
   display: block;
   width: 100%;
-  padding: 8px;
+  padding: 10px 8px;
   box-sizing: border-box;
   font-size: 19px;
   background-color: var(--tertiary);
@@ -281,8 +281,9 @@ $max-width: 850px;
     display: grid;
     align-items: center;
     grid-template-columns: 5fr 1fr 3fr;
+    row-gap: 1em;
     grid-template-rows: 1fr auto;
-    p {
+    > .text-wrapper > p {
       margin-bottom: 0;
     }
   } 
@@ -309,6 +310,9 @@ $max-width: 850px;
     gap: 1rem;
     align-self: flex-end;
     margin: 0;
+    > .question-btn {
+      max-width: 230px;
+    }
   }
   .search-widget {
     max-width: 500px;
