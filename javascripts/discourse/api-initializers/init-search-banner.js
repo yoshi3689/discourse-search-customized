@@ -16,9 +16,11 @@ export default apiInitializer("0.8", (api) => {
   api.onPageChange(() => {
     const realQuestionBtn = document.querySelector('#create-topic');
     if (realQuestionBtn) {
-      const container = document.querySelector('.body-nav-title');
+      const container = document.querySelector('.search-container');
+      console.log("this is executed", container);
       const visibleQuestionBtn = container.querySelector('.question-btn');
       visibleQuestionBtn.addEventListener('click', () => {
+        console.log("event");
         realQuestionBtn.click();
       });
     }
