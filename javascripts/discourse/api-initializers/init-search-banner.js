@@ -15,8 +15,8 @@ export default apiInitializer("0.8", (api) => {
 
   api.onPageChange(() => {
     const realQuestionBtn = document.querySelector('#create-topic');
-    if (realQuestionBtn) {
-      const container = document.querySelector('.search-container');
+    const container = document.querySelector('.search-container');
+    if (realQuestionBtn && container) {
       const visibleQuestionBtn = container.querySelector('.question-btn');
       visibleQuestionBtn.addEventListener('click', () => {
         realQuestionBtn.click();
