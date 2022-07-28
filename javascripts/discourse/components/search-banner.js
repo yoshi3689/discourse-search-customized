@@ -18,7 +18,6 @@ export default Component.extend({
         .split("|")
         .any((m) => `discovery.${m}` === currentRouteName);
     } else {
-      // "all"
       return (
         currentRouteName !== "full-page-search" &&
         !currentRouteName.startsWith("admin.")
