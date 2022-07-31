@@ -13,16 +13,16 @@ export default apiInitializer("0.8", (api) => {
     },
   });
 
-  api.onPageChange(() => {
-    const realQuestionBtn = document.querySelector('#create-topic');
-    const container = document.querySelector('.search-container');
-    if (realQuestionBtn && container) {
-      const visibleQuestionBtn = container.querySelector('.question-btn');
-      visibleQuestionBtn.addEventListener('click', () => {
-        realQuestionBtn.click();
-      });
-    }
-  });
+  // api.onPageChange(() => {
+  //   const realQuestionBtn = document.querySelector('#create-topic');
+  //   const container = document.querySelector('.search-container');
+  //   if (realQuestionBtn && container) {
+  //     const visibleQuestionBtn = container.querySelector('.question-btn');
+  //     visibleQuestionBtn.addEventListener('click', () => {
+  //       realQuestionBtn.click();
+  //     });
+  //   }
+  // });
 
   // Simplified version of header search theme component
   const searchMenuWidget = api.container.factoryFor("widget:search-menu");
