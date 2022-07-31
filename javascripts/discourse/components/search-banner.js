@@ -38,6 +38,14 @@ export default Component.extend({
     return false;
   },
 
+  @discourseComputed("currentUser")
+  hideLoggedIn(currentUser) {
+    console.log(currentUser? "true":"false");
+    return (
+      (currentUser ? true : false)
+    );
+  },
+
   shouldDisplay: and("displayForUser", "displayForRoute"),
 
   // Setting a class on <html> from a component is not great

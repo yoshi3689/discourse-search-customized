@@ -8,9 +8,26 @@
       <div class="search-container">
         {{mount-widget widget="search-widget"}}
         <span>OR</span>
-        <button class="question-btn">
+        {{!-- <button class="question-btn">
           <span class="btn-text">Ask a Question</span>
-        </button>
+        </button> --}}
+        {{#if hideLoggedIn}}
+    {{d-button
+    class=btnClass
+    id="create-topic-button-1"
+    action=(route-action "createTopic")
+    icon="plus"
+    disabled=disabled
+    label=label}}
+{{else}}
+ {{d-button
+    class=btnClass
+    id="create-topic-button-2"
+    action=(route-action "showLogin")
+    icon="plus"
+    disabled=disabled
+    label=label}}
+{{/if}}
       </div>
       <a class="clickable-image-wrapper" href="{{theme-i18n "search_banner.clickable_image_link"}}">
         <div class="clickable-image"> </div>
