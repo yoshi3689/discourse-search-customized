@@ -43,7 +43,7 @@ export default Component.extend({
   },
 
   shouldDisplay: and("displayForUser", "displayForRoute"),
-  shouldQuestionBtnAppear: and("isRouteForBtn", true),
+  shouldQuestionBtnAppear: "isRouteForBtn",
   // Setting a class on <html> from a component is not great
   // but we need it for backwards compatibility
   @observes("shouldDisplay")
