@@ -39,12 +39,12 @@ export default Component.extend({
   },
 
   @discourseComputed("router.currentRouteName")
-  isOnCategories(currentRouteName) {
-    return currentRouteName.includes("categories");
+  isOnSingleTopic(currentRouteName) {
+    return !currentRouteName.includes("topic");
   },
 
   shouldDisplay: and("displayForRoute", "displayForUser"),
-  onCategories: bool("isOnCategories"),
+  shouldHideQBtn: bool("isOnSingleTopic"),
   // Setting a class on <html> from a component is not great
   // but we need it for backwards compatibility
   @observes("shouldDisplay")

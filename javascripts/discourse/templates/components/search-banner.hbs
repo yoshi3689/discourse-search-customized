@@ -7,7 +7,8 @@
       </div>
       <div class="search-container">
         {{mount-widget widget="search-widget"}}
-        {{#if onCategories}}
+        {{#if shouldHideQBtn}}
+        {{else}}
         <span>OR</span>
         <button class="question-btn">
           <span class="btn-text">Ask a Question</span>
