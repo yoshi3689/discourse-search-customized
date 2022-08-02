@@ -38,9 +38,8 @@ export default Component.extend({
     return false;
   },
 
-
   shouldDisplay: and("displayForUser", "displayForRoute"),
-
+  shouldQuestionBtnAppear: window.location.pathname.includes("/t/"),
   // Setting a class on <html> from a component is not great
   // but we need it for backwards compatibility
   @observes("shouldDisplay")

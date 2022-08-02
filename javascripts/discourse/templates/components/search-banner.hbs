@@ -7,10 +7,12 @@
       </div>
       <div class="search-container">
         {{mount-widget widget="search-widget"}}
+        {{#if shouldQuestionBtnAppear}}
         <span>OR</span>
         <button class="question-btn">
           <span class="btn-text">Ask a Question</span>
         </button>
+        {{/if}}
         {{#if hideLoggedIn}}
     
 {{/if}}
