@@ -38,8 +38,13 @@ export default Component.extend({
     return false;
   },
 
-  shouldDisplay: and("displayForUser", "displayForRoute"),
-  shouldQuestionBtnAppear: !window.location.pathname.includes("/t/"),
+  @discourseComputed("router.currentRouteName")
+  isOnCategories(currentRouteName) {
+    return currentRouteName.includes("categories");
+  },
+
+  shouldDisplay: bool("displayForRoute"),
+  onCategories: bool("isOnCategories"),
   // Setting a class on <html> from a component is not great
   // but we need it for backwards compatibility
   @observes("shouldDisplay")
