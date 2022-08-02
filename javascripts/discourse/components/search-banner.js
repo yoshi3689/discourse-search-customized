@@ -40,7 +40,7 @@ export default Component.extend({
 
   @discourseComputed("router.currentRouteName")
   isOnSingleTopic(currentRouteName) {
-    return !currentRouteName.includes("topic");
+    return currentRouteName.includes("topic");
   },
 
   shouldDisplay: and("displayForRoute", "displayForUser"),
