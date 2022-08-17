@@ -14,12 +14,12 @@ export default apiInitializer("0.8", (api) => {
   });
 
   api.onPageChange(() => {
-    if (realQuestionBtn.disabled) {
-      visibleQuestionBtn.disabled = true; 
-     }
     const realQuestionBtn = document.querySelector('#create-topic');
     const container = document.querySelector('.search-container');
     if (realQuestionBtn && container) {
+      if (realQuestionBtn.disabled) {
+        visibleQuestionBtn.disabled = true; 
+       }
       const visibleQuestionBtn = container.querySelector('.question-btn');
       visibleQuestionBtn.addEventListener('click', () => {
         realQuestionBtn.click();
