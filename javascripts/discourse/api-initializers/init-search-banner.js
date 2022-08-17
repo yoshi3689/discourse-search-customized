@@ -17,10 +17,10 @@ export default apiInitializer("0.8", (api) => {
     const realQuestionBtn = document.querySelector('#create-topic');
     const container = document.querySelector('.search-container');
     if (realQuestionBtn && container) {
+      const visibleQuestionBtn = container.querySelector('.question-btn');
       if (realQuestionBtn.disabled) {
         visibleQuestionBtn.disabled = true; 
        }
-      const visibleQuestionBtn = container.querySelector('.question-btn');
       visibleQuestionBtn.addEventListener('click', () => {
         realQuestionBtn.click();
       });
