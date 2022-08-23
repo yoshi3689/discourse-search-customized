@@ -2,9 +2,6 @@
 
 $max-width: 850px;
 
-// the width of the search bar is too big on mobile
-// so that the button/search bar looks weird
-
 #main-outlet {
   margin: 0 auto;
 }
@@ -41,7 +38,6 @@ $max-width: 850px;
 }
 
 .search-banner {
-  // background-color: var(--tertiary);
   @if $background_image != "none" {
     background-image: 
       linear-gradient(152deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 0.5) 100%),
@@ -51,7 +47,7 @@ $max-width: 850px;
       color: #eee;
     }
   } @else {
-    // background-color: var(--tertiary);
+    background-color: var(--tertiary);
   }
   @if $tile_background_image == "true" {
     background-size: auto;
@@ -253,7 +249,7 @@ $max-width: 850px;
 
     @if $background_image != "none" {
     background-image: url($clickable_image);
-  } @else {
+  } @else { 
     background: none;
   }
   @if $tile_background_image == "true" {
@@ -301,6 +297,8 @@ $max-width: 850px;
       height: 100%;
     }
   }
+
+  // container for the search nar and ask-a-question button
   .search-container {
     max-width: 780px;
     width: 80%;

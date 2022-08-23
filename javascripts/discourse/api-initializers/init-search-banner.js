@@ -14,6 +14,7 @@ export default apiInitializer("0.8", (api) => {
   });
 
   api.onPageChange(() => {
+    // make ask-a-question button click the actual question button
     const realQuestionBtn = document.querySelector('#create-topic');
     const container = document.querySelector('.search-container');
     if (realQuestionBtn && container) {

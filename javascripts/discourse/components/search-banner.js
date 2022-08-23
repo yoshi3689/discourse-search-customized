@@ -37,7 +37,7 @@ export default Component.extend({
     }
     return false;
   },
-
+  // determines if the user is on an individual topic page
   @discourseComputed("router.currentRouteName")
   isOnSingleTopic(currentRouteName) {
     return currentRouteName.includes("topic");
