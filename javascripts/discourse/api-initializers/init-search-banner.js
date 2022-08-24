@@ -13,6 +13,8 @@ export default apiInitializer("0.8", (api) => {
     },
   });
 
+  // https://meta.discourse.org/t/developer-s-guide-to-discourse-themes/93648
+  // under "Advanced discourse themes"
   api.onPageChange(() => {
     // make ask-a-question button click the actual question button
     const realQuestionBtn = document.querySelector('#create-topic');
@@ -32,12 +34,15 @@ export default apiInitializer("0.8", (api) => {
   const searchMenuWidget = api.container.factoryFor("widget:search-menu");
   const corePanelContents = searchMenuWidget.class.prototype["panelContents"];
 
+    // https://meta.discourse.org/t/developer-s-guide-to-discourse-themes/93648
+  // under "Advanced discourse themes"
   api.reopenWidget("search-menu", {
     buildKey(attrs) {
       let type = attrs.formFactor || "menu";
       return `search-${type}`;
     },
 
+    // functions defined for the search bar widget control
     defaultState(attrs) {
       return {
         formFactor: attrs.formFactor || "menu",
@@ -131,10 +136,14 @@ export default apiInitializer("0.8", (api) => {
     },
   });
 
+    // https://meta.discourse.org/t/developer-s-guide-to-discourse-themes/93648
+  // under "Advanced discourse themes"
   api.createWidget("search-widget", {
     tagName: "div.search-widget",
   });
 
+    // https://meta.discourse.org/t/developer-s-guide-to-discourse-themes/93648
+  // under "Advanced discourse themes"
   api.decorateWidget("search-widget:after", function (helper) {
     const searchWidget = helper.widget;
     const searchMenuVisible = searchWidget.state.searchVisible;
